@@ -9,7 +9,7 @@ select e_name,((sal+(0.1*sal)))*12 as Annual_salary from emp where mgr=7566;
 -- 3. WAQTD EMPLOYEE DETAILS WHOSE NAME STARTS WITH 'K' AND ENDS WITH 'S'.
 select * from emp where e_name like "K%S";
 -- 4. WAQTD EMPLOLYEE DETAILS WHO HIRED BETWEEN 80-87 AND NAMES STARTS WITH CONSONANTS.
-select * from emp where hiredate between "1980-01-01" and "1987-12-31" and (e_name not like "a%" or e_name not like "e%" or e_name not like"i%" or e_name not like "%o" or e_name not like "%u");
+select * from emp where hiredate between "1980-01-01" and "1987-12-31" and (e_name not like "a%" and e_name not like "e%" and e_name not like"i%" and e_name not like "%o" and e_name not like "%u");
 -- 5. WAQTD NAMES STARTS WITH VOWELS AND ENDS WITH CONSONANTS.
 select e_name from emp where (e_name like "a%" or e_name like "e%" or e_name like"i%" or e_name like "o%" or e_name like "u%") and 
 (e_name not like "%a" and e_name not like "%e" and e_name not like "%i" and e_name not like "%o" and e_name not like "%u");
