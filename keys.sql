@@ -16,7 +16,7 @@ insert into dept values(30,"Sales","Chicago");
 insert into dept values(40,"Operations","Boston");
 select * from emp;
 drop table emp;
-insert into emp values(7369,"Smith","Clerk",7902,"1980-12-17",800,null,20);
+insert into emp values(7369,"Smith","Clerk",7902,"1980-12-17",800,NULL,20);
 insert into emp values(7499,'Allen','Salesman',7698,'1981-02-20',1600,300,30);
 insert into emp values(7521,'Ward','Salesman',7698,'1981-02-22',1250,500,30);
 insert into emp values(7566,'Jones','Manager',7839,'1981-04-02',2975,NULL,20);
