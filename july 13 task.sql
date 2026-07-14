@@ -19,3 +19,5 @@ select e_name,d_name,sal from emp left outer join dept on emp.d_no=dept.d_no ord
 select  distinct e.e_name,d.d_name from emp e join emp m on e.job=m.job join dept d on e.d_no=d.d_no where e.d_no!=m.d_no;
 -- 9.List all departments name along with who hired first
 select d_name,min(hiredate) from emp left outer join dept on emp.d_no=dept.d_no group by d_name;
+-- 10.display employee student details
+SELECT *FROM employee CROSS JOIN student;
