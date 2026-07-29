@@ -21,3 +21,4 @@ select  distinct e.e_name,d.d_name from emp e join emp m on e.job=m.job join dep
 select d_name,min(hiredate) from emp left outer join dept on emp.d_no=dept.d_no group by d_name;
 -- 10.display employee student details
 SELECT *FROM employee CROSS JOIN student;
+ 
